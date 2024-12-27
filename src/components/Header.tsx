@@ -1,9 +1,10 @@
-// Importing required dependencies
+
 import Image from 'next/image';
 import { MdPersonOutline } from "react-icons/md";
 import { IoSearch } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa6";
 import { BsCart3 } from "react-icons/bs";
+import Link from 'next/link';
 
 export function Header() {
   return (
@@ -16,18 +17,23 @@ export function Header() {
 
       {/* Navigation Menu */}
       <nav className="hidden md:flex items-center gap-8">
-        <a href="#" className="text-gray-700 font-medium hover:text-[#B88E2F]">Home</a>
-        <a href="#" className="text-gray-700 font-medium hover:text-[#B88E2F]">Shop</a>
-        <a href="#" className="text-gray-700 font-medium hover:text-[#B88E2F]">Blog</a>
-        <a href="#" className="text-gray-700 font-medium hover:text-[#B88E2F]">Contact</a>
+        <Link href="/" className="text-gray-700 font-medium hover:text-[#B88E2F]">Home</Link>
+        <Link href="/shop" className="text-gray-700 font-medium hover:text-[#B88E2F]">Shop</Link>
+        <Link href="/blog" className="text-gray-700 font-medium hover:text-[#B88E2F]">Blog</Link>
+        <Link href="/contact" className="text-gray-700 font-medium hover:text-[#B88E2F]">Contact</Link>
+        
       </nav>
 
       {/* Icons */}
       <div className="flex items-center gap-6 text-gray-700">
         <MdPersonOutline size={20} className="cursor-pointer hover:text-[#B88E2F]" />
+        <Link href="/productcomparison">
         <IoSearch size={20} className="cursor-pointer hover:text-[#B88E2F]" />
+        </Link>
         <FaRegHeart size={20} className="cursor-pointer hover:text-[#B88E2F]" />
+        <Link href="/cart">
         <BsCart3 size={20} className="cursor-pointer hover:text-[#B88E2F]" />
+        </Link>
       </div>
     </header>
   );

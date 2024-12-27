@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Browse() {
   return (
-    <div className="flex flex-col gap-[30px] md:gap-[60px] pt-[30px] md:pt-0 items-center bg-[#F4F5F7] px-6">
+    <div className="flex flex-col gap-[30px] md:gap-[60px] pt-[30px] md:pt-0 items-center bg-[#F4F5F7] px-4">
       <div className="w-fit text-center">
         <h2 className="text-Font font-bold text-[32px]">Browse The Range</h2>
         <p className="text-Font1 font-normal text-[20px]">

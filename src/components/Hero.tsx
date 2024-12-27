@@ -1,9 +1,9 @@
-/**hero section */
+
 import Image from 'next/image';
 export function Hero() {
   return (
     <section className="relative bg-white">
-      <div className="relative w-full h-[500px]">
+      <div className="flex md:justify-end justify-center items-center md:h-[716px] h-[400px] bg-no-repeat bg-center bg-contain bg-[#F4F5F7]">
         {/* Background Image */}
         <Image src="/images/hero.png"
           alt="Hero Background"
@@ -11,7 +11,6 @@ export function Hero() {
           layout="fill"
           priority/>
         
-   
 
         {/* Hero Text */}
         <div className="absolute top-1/2 right-16 transform -translate-y-1/2 bg-[#FFF3E3] p-8 rounded-lg shadow-md max-w-md">

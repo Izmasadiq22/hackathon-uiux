@@ -6,6 +6,7 @@ import { RoomInspiration } from "@/components/RoomInspiration";
 import React from "react";
 
 
+
 export default function page (){
     return(
         <div>
@@ -15,7 +16,9 @@ export default function page (){
             <OurProducts/>                                 
             <RoomInspiration/>
             <Funiro/>
-            
+          
+      
+    
         
             {/* <Footer/> */}
             
